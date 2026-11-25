@@ -29,13 +29,40 @@
 
 
 
-num=int(input("Enter: "))
-for i in range(1,num):
-    if i%3==0 and i%5==0:
-        print("FizzBuzz")
-    elif i%3==0:
-        print("Fizz")
-    elif i%5==0:
-        print("Buzz")
-    else:
-        print(i)
+# num=int(input("Enter: "))
+# for i in range(1,num):
+#     if i%3==0 and i%5==0:
+#         print("FizzBuzz")
+#     elif i%3==0:
+#         print("Fizz")
+#     elif i%5==0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
+
+# sum=0
+# n=int(input("Enter Number: "))
+# for i in range(1,n+1):
+#     sum+=i
+# print(sum)
+
+# count=0
+# n=int(input("Enter Number: "))
+# while n>0:
+#     n//=10
+#     count+=1
+    
+# print(count)
+
+# a=input("Enter string: ")
+# b=''
+# for char in a:
+#     b=char+b
+
+# if a==b:
+#     print("Yes")
+# else:
+#     print("No")
+
+
