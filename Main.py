@@ -138,49 +138,72 @@
 # print(list2)
 
 
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-def sub(a, b):
-    return a - b
+# def sub(a, b):
+#     return a - b
 
-def mul(a, b):
-    return a * b
+# def mul(a, b):
+#     return a * b
 
-def division(a, b):
-    if b == 0:
-        return "Cannot divide by zero"
-    return a / b
+# def division(a, b):
+#     if b == 0:
+#         return "Cannot divide by zero"
+#     return a / b
 
 
-while True:
-    print("\n1 - Add")
-    print("2 - Sub")
-    print("3 - Mul")
-    print("4 - Div")
-    print("5 - Exit")
+# while True:
+#     print("\n1 - Add")
+#     print("2 - Sub")
+#     print("3 - Mul")
+#     print("4 - Div")
+#     print("5 - Exit")
 
-    n = input("Enter what to do: ")
+#     n = input("Enter what to do: ")
 
-    if n in ['1', '2', '3', '4']:
-        a = int(input("Enter Number 1: "))
-        b = int(input("Enter Number 2: "))
+#     if n in ['1', '2', '3', '4']:
+#         a = int(input("Enter Number 1: "))
+#         b = int(input("Enter Number 2: "))
 
-        if n == '1':
-            print("Result:", add(a, b))
+#         if n == '1':
+#             print("Result:", add(a, b))
 
-        elif n == '2':
-            print("Result:", sub(a, b))
+#         elif n == '2':
+#             print("Result:", sub(a, b))
 
-        elif n == '3':
-            print("Result:", mul(a, b))
+#         elif n == '3':
+#             print("Result:", mul(a, b))
 
-        elif n == '4':
-            print("Result:", division(a, b))
+#         elif n == '4':
+#             print("Result:", division(a, b))
 
-    elif n == '5':
-        print("Calculator Closed")
-        break
+#     elif n == '5':
+#         print("Calculator Closed")
+#         break
 
-    else:
-        print("Invalid Choice")
+#     else:
+#         print("Invalid Choice")
+
+# numbers=[12,34,55,44]
+# largest=float("-inf")
+# Second=float("-inf")
+
+# numbers = [12, 34, 55, 44]
+
+# largest = float("-inf")
+# second = float("-inf")
+
+# for num in numbers:
+
+#     if num > largest:
+#         second = largest
+#         largest = num
+
+#     elif num > second and num < largest:
+#         second = num
+
+# if second == float("-inf"):
+#     print("There is no second largest")
+# else:
+#     print("Second Largest:", second)
