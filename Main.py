@@ -98,8 +98,89 @@
 #         print("Prime")
 
 
-number=int(input("Enter Number: "))
-for i in range(1,number+1):
-    for j in range(1,i+1):
-        print(j,end=" ")
-    print()
+# number=int(input("Enter Number: "))
+# for i in range(1,number+1):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     print()
+
+# n=int(input("Enter Number: "))
+# for i in range(1,n+1):
+#     if n==0 or n==1:
+#         print()
+
+# fact=1
+# n=int(input("Enter Number: "))
+# for i in range(1,n+1):
+#     if n<0:
+#         print("Factorial is not Defined")
+#     else:
+#         fact*=i
+
+# print("The Factorial is: ",fact)
+
+# num1=int(input("Enter Number 1: "))
+# num2=int(input("Enter Number 2: "))
+# n=int(input("Enter Number: "))
+# max_div=0
+# for i in range(1,n+1):
+#     if(num1%i==0 and num2%i==0):
+#         max_div=i
+
+# print("The max div is: ",max_div)
+
+# list1=[1,2,3,4,5,6,6,7,4]
+# list2=[]
+
+# for i in list1:
+#     if i not in list2:
+#         list2.append(i)
+# print(list2)
+
+
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def division(a, b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
+
+while True:
+    print("\n1 - Add")
+    print("2 - Sub")
+    print("3 - Mul")
+    print("4 - Div")
+    print("5 - Exit")
+
+    n = input("Enter what to do: ")
+
+    if n in ['1', '2', '3', '4']:
+        a = int(input("Enter Number 1: "))
+        b = int(input("Enter Number 2: "))
+
+        if n == '1':
+            print("Result:", add(a, b))
+
+        elif n == '2':
+            print("Result:", sub(a, b))
+
+        elif n == '3':
+            print("Result:", mul(a, b))
+
+        elif n == '4':
+            print("Result:", division(a, b))
+
+    elif n == '5':
+        print("Calculator Closed")
+        break
+
+    else:
+        print("Invalid Choice")
