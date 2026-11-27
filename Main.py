@@ -66,3 +66,40 @@
 #     print("No")
 
 
+# n=int(input("Enter Number: "))
+# table=int(input("Enter Table: "))
+
+# for i in range(1,n+1):
+#     print(f"{i} x {table} = {i*table}")
+
+
+
+# even_sum=0
+# odd_sum=0
+# number=int(input("Ener number: "))
+# for i in range(1,number+1):
+#     if i%2==0:
+#         even_sum+=i
+#     else:
+#         odd_sum+=i
+
+# print("Even Sum: ",even_sum)
+# print("Odd Sum: ",odd_sum)
+
+# number=int(input("Enter Number: "))
+# if number<=1:
+#     print("Not Prime")
+# else:
+#     for i in range(2,number):
+#         if number%i==0:
+#             print("Not Prime")
+#             break
+#     else:
+#         print("Prime")
+
+
+number=int(input("Enter Number: "))
+for i in range(1,number+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
