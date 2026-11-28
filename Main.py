@@ -207,3 +207,74 @@
 #     print("There is no second largest")
 # else:
 #     print("Second Largest:", second)
+
+# COUNT=0
+# str=input("Enter Name: ")
+# for char in str:
+#     if char in "aeiouAEIOU":
+#         COUNT+=1
+
+# print(COUNT)
+# def largest():
+#     while True:
+#         a=int(input("Enter Number: "))
+#         b=int(input("Enter Number: "))
+#         c=int(input("Enter Number: "))
+
+#         if a>b and a>c:
+#             print(f"{a} is the largest")
+#         elif b>a and b>c:
+#             print(f"{b} is the largest")
+#         else:
+#             print(f"{c} is the largest")
+
+# largest()
+
+# def largest(a,b,c):
+#     while True:
+#         if a>b and a>c:
+#             return a
+#         elif b>a and b>c:
+#             return b
+#         else:
+#             return c
+
+# a=int(input("Enter Number: "))
+# b=int(input("Enter Number: "))
+# c=int(input("Enter Number: "))
+
+# print("Largest: ",largest(a,b,c))
+
+# str1=input("Enter: ")
+# str2=input("Enter: ")
+# str1=str1.lower()
+# str2=str2.lower()
+
+# if len(str1)!=len(str2):
+#     print("Not Anagram")
+
+# for char in str1:
+#     if str1.count(char)!=str2.count(char):
+#         print("Not Anagram")
+# else:
+#     print("Anagram")
+# list1=[0,1,0,3,12]
+# empty_list=[]
+# count=0
+# for i in list1:
+#     if i==0:
+#         count+=1
+#     else:
+#         empty_list.append(i)
+# while count>0:
+#     empty_list.append(0)
+#     count-=1
+# print(empty_list)
+
+numbers = [2, 7, 11, 15]
+target=9
+for i in range(len(numbers)):
+    for j in range(i+1,len(numbers)):
+        if numbers[i]+numbers[j]==target:
+            print([i,j]) 
+            
